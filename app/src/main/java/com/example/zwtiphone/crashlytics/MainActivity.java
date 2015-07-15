@@ -3,6 +3,7 @@ package com.example.zwtiphone.crashlytics;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
                 }
             }
         });
-
+        Toast.makeText(getApplicationContext(),"First Commit",Toast.LENGTH_LONG).show();
         findViewById(R.id.buttonUnhandled).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
